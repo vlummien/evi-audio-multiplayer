@@ -1,8 +1,6 @@
-using System;
-using Mirror;
-using Unity.VisualScripting;
 using UnityEngine;
-using Random = UnityEngine.Random;
+using UnityEngine.Serialization;
+using Unity.Netcode;
 
 public class SphereMovement : NetworkBehaviour
 {
@@ -16,7 +14,7 @@ public class SphereMovement : NetworkBehaviour
 
     void Start()
     {
-        RandomizeStartPosition();
+        RandomizeStartPositionClientRpc();
     }
 
     void Update()
@@ -25,15 +23,15 @@ public class SphereMovement : NetworkBehaviour
 
         if (timer >= switchTime)
         {
-            RandomizeStartPosition();
+            RandomizeStartPositionClientRpc();
             timer = 0f;
         }
 
-        MoveSphere();
+        MoveSphereClientRpc();
     }
 
     [ClientRpc]
-    void RandomizeStartPosition()
+    void RandomizeStartPositionClientRpc()
     {
         // Randomly choose the start position and movement direction
         transform.position = new Vector3(Random.Range(-5f, 5f), 0f, 0f);
@@ -41,7 +39,7 @@ public class SphereMovement : NetworkBehaviour
     }
 
     [ClientRpc]
-    void MoveSphere()
+    void MoveSphereClientRpc()
     {
         // Move the sphere in the selected dimension
         float movement = speed * Time.deltaTime;
@@ -60,9 +58,7 @@ public class SphereMovement : NetworkBehaviour
             // Play sound clip at position of collision
             AudioSource.PlayClipAtPoint(soundClip, collision.transform.position);
 
-            RandomizeStartPosition();
-            // Call Score() on bullet
-            // collision.gameObject.GetComponent<BulletScript>().Score();
+            RandomizeStartPositionClientRpc();
         }
     }
 }

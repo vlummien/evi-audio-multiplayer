@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/NetCodeTutorial.unity
+- path: Assets/Scenes/NetCodeScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
