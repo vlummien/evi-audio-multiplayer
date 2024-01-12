@@ -1,0 +1,13 @@
+Sonidos de bandaSonora*, motorContinuo y sirenaAmbulancia
+CNICE <http://recursostic.educacion.es/bancoimagenes/web/>
+
+Locuciones Amy y Brian
+Free Voices for Words with Life. LAMP Words for Life™
+<https://aacapps.com/lamp/voices>
+
+
+saveAn_AudioClip_AsA_WAVE_File__unity3D.zip
+darktable. (2011). SavWav.cs
+<https://gist.github.com/darktable/2317063>
+Unity3D: script to save an AudioClip as a .wav file.
+
