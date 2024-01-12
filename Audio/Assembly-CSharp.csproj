@@ -94,6 +94,7 @@
      <Compile Include="Assets/Scripts/GamesList.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
      <Folder Include="Assets" />
+     <Folder Include="Assets/Images" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <Folder Include="Assets/Prefabs" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Sprites" />

@@ -1,10 +1,9 @@
 using System;
-using Mirror;
 using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class SphereMovement : NetworkBehaviour
+public class SphereMovement : MonoBehaviour
 {
     public float speed = 5f; // Speed of the sphere
     public float switchTime = 3f; // Time between position changes
@@ -31,16 +30,14 @@ public class SphereMovement : NetworkBehaviour
 
         MoveSphere();
     }
-
-    [ClientRpc]
+    
     void RandomizeStartPosition()
     {
         // Randomly choose the start position and movement direction
         transform.position = new Vector3(Random.Range(-5f, 5f), 0f, 0f);
         moveInX = Random.value > 0.5f;
     }
-
-    [ClientRpc]
+    
     void MoveSphere()
     {
         // Move the sphere in the selected dimension

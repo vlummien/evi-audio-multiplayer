@@ -28,12 +28,7 @@ namespace QuickStart
             //called from sync var hook, to update info on screen for all players
             canvasStatusText.text = statusText;
         }
-
-        public void ButtonSendMessage()
-        {
-            if (playerScript != null)  
-                playerScript.CmdSendPlayerMessage();
-        }
+        
         
         public void ButtonChangeScene()
         {
