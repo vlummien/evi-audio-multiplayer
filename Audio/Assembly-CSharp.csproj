@@ -48,12 +48,15 @@
      <Compile Include="Assets/Scripts/SceneScript.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" />
+     <Compile Include="Assets/Scripts/NetworkCommandLine.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
+     <Compile Include="Assets/Scripts/RpcTestNC.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeB.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/DropdownSample.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexColorCycler.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" />
+     <Compile Include="Assets/Scripts/HelloWorldPlayer.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01_UGUI.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs" />
@@ -69,6 +72,7 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_FrameRateCounter.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextConsoleSimulator.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TeleType.cs" />
+     <Compile Include="Assets/Scripts/NetworkTransformTestNC.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" />
      <Compile Include="Assets/Scripts/Webcam.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_UiFrameRateCounter.cs" />
@@ -90,10 +94,12 @@
      <Compile Include="Assets/Scripts/GameOver.cs" />
      <Compile Include="Assets/Scripts/MoveClass.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" />
+     <Compile Include="Assets/Scripts/HelloWorldManager.cs" />
      <Compile Include="Assets/Scripts/SceneReference.cs" />
      <Compile Include="Assets/Scripts/GamesList.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
      <Folder Include="Assets" />
+     <Folder Include="Assets/Images" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <Folder Include="Assets/Prefabs" />
      <Folder Include="Assets/TextMesh Pro/Examples &amp; Extras/Sprites" />
@@ -424,6 +430,12 @@
      </Reference>
      <Reference Include="Newtonsoft.Json">
      <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Collections.LowLevel.ILSupport">
+     <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+     </Reference>
+     <Reference Include="Mono.Cecil">
+     <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4/Mono.Cecil.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>/Applications/Unity/Hub/Editor/2022.3.3f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -812,11 +824,17 @@
      <Reference Include="Unity.PlasticSCM.Editor">
      <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Burst">
+     <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Timeline.Editor">
      <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Shared.Editor">
      <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Editor">
+     <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
      <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
@@ -839,14 +857,26 @@
      <Reference Include="Unity.VisualScripting.Flow">
      <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Netcode.Components">
+     <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.Netcode.Components.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.Flow.Editor">
      <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Mathematics.Editor">
+     <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
      <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
      <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Netcode.Editor">
+     <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.Netcode.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Networking.Transport">
+     <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.Networking.Transport.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
      <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
@@ -860,14 +890,29 @@
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
      <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Collections">
+     <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Netcode.Runtime">
+     <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.Netcode.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Netcode.Editor.PackageChecker">
+     <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.Netcode.Editor.PackageChecker.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.State.Editor">
      <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Mathematics">
+     <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro">
      <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
      <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Networking.Editor">
+     <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.Networking.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State">
      <HintPath>/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>

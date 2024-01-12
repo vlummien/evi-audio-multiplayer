@@ -1,27 +1,19 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - Bullet
-    - GameLogic
-    - GameOver
-    - QuickStart.GamesList
-    - QuickStart.Menu
-    - QuickStart.PlayerScript
-    - QuickStart.SceneReference
-    - QuickStart.SceneScript
-    - QuickStart.Weapon
-    - SphereMovement
-    - Webcam
-    Mirror.Components.dll:
-    - Mirror.NetworkTransformReliable
-    - Mirror.NetworkTransformUnreliable
-    Mirror.Transports.dll:
-    - kcp2k.KcpTransport
-    Mirror.dll:
-    - Mirror.NetworkIdentity
-    - Mirror.NetworkManager
-    - Mirror.NetworkManagerHUD
-    - Mirror.NetworkStartPosition
+    - HelloWorld.HelloWorldManager
+    - HelloWorld.HelloWorldPlayer
+    - NetworkCommandLine
+    - RpcTest
+    Unity.Netcode.Editor.dll:
+    - Unity.Netcode.Editor.Configuration.NetcodeForGameObjectsProjectSettings
+    - Unity.Netcode.Editor.NetworkBehaviourEditor
+    - Unity.Netcode.Editor.NetworkObjectEditor
+    Unity.Netcode.Runtime.dll:
+    - Unity.Netcode.NetworkManager
+    - Unity.Netcode.NetworkObject
+    - Unity.Netcode.NetworkPrefabsList
+    - Unity.Netcode.Transports.UTP.UnityTransport
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.RiderScriptEditorData
     - Packages.Rider.Editor.RiderScriptEditorPersistedState
@@ -32,12 +24,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
-    Unity.TextMeshPro.dll:
-    - TMPro.TMP_FontAsset
-    - TMPro.TMP_Settings
-    - TMPro.TMP_SpriteAsset
-    - TMPro.TMP_StyleSheet
-    - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -48,16 +34,14 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-    UnityEngine.UI.dll:
-    - UnityEngine.EventSystems.EventSystem
-    - UnityEngine.EventSystems.StandaloneInputModule
-    - UnityEngine.UI.Button
-    - UnityEngine.UI.CanvasScaler
-    - UnityEngine.UI.GraphicRaycaster
-    - UnityEngine.UI.Image
   serializedClasses:
-    Mirror:
-    - Mirror.SnapshotInterpolationSettings
+    Unity.Netcode.Runtime:
+    - Unity.Netcode.NetworkConfig
+    - Unity.Netcode.NetworkPrefab
+    - Unity.Netcode.NetworkPrefabs
+    - Unity.Netcode.NetworkVariable`1[UnityEngine.Vector3]
+    - Unity.Netcode.Transports.UTP.UnityTransport/ConnectionAddressData
+    - Unity.Netcode.Transports.UTP.UnityTransport/SimulatorParameters
     Unity.TextMeshPro:
     - TMPro.FaceInfo_Legacy
     - TMPro.FontAssetCreationSettings
@@ -72,44 +56,14 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteCharacter
     - TMPro.TMP_SpriteGlyph
     - TMPro.TMP_Style
-    - TMPro.VertexGradient
-    UnityEngine.CoreModule:
-    - UnityEngine.Events.ArgumentCache
-    - UnityEngine.Events.PersistentCallGroup
-    - UnityEngine.Events.PersistentListenerMode
     UnityEngine.TextCoreFontEngineModule:
     - UnityEngine.TextCore.FaceInfo
     - UnityEngine.TextCore.Glyph
     - UnityEngine.TextCore.GlyphMetrics
     - UnityEngine.TextCore.GlyphRect
-    UnityEngine.UI:
-    - UnityEngine.UI.AnimationTriggers
-    - UnityEngine.UI.Button/ButtonClickedEvent
-    - UnityEngine.UI.ColorBlock
-    - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
-    - UnityEngine.UI.Navigation
-    - UnityEngine.UI.SpriteState
-  methodsToPreserve:
-  - assembly: Assembly-CSharp
-    fullTypeName: QuickStart.Menu
-    methodName: LoadScene
-  - assembly: Assembly-CSharp
-    fullTypeName: QuickStart.GamesList
-    methodName: LoadScene
-  - assembly: Assembly-CSharp
-    fullTypeName: QuickStart.SceneScript
-    methodName: ButtonSendMessage
-  - assembly: Assembly-CSharp
-    fullTypeName: QuickStart.SceneScript
-    methodName: ButtonChangeScene
-  - assembly: Assembly-CSharp
-    fullTypeName: QuickStart.SceneScript
-    methodName: ButtonSendMessage
-  - assembly: Assembly-CSharp
-    fullTypeName: QuickStart.SceneScript
-    methodName: ButtonChangeScene
+  methodsToPreserve: []
   sceneClasses:
-    Assets/Scenes/GameList.unity:
+    Assets/Scenes/NetCodeTutorial.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -128,89 +82,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 54
-      Script: {instanceID: 0}
-    - Class: 65
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 102
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 16616}
-    - Class: 114
-      Script: {instanceID: 16618}
-    - Class: 114
-      Script: {instanceID: 16666}
-    - Class: 114
-      Script: {instanceID: 17514}
-    - Class: 114
-      Script: {instanceID: 17808}
-    - Class: 114
-      Script: {instanceID: 18026}
-    - Class: 114
-      Script: {instanceID: 18132}
-    - Class: 114
-      Script: {instanceID: 18450}
-    - Class: 114
-      Script: {instanceID: 18650}
-    - Class: 114
-      Script: {instanceID: 19736}
-    - Class: 114
-      Script: {instanceID: 19870}
-    - Class: 114
-      Script: {instanceID: 19976}
-    - Class: 114
-      Script: {instanceID: 20286}
-    - Class: 114
-      Script: {instanceID: 20494}
-    - Class: 114
-      Script: {instanceID: 20562}
-    - Class: 114
-      Script: {instanceID: 21378}
-    - Class: 114
-      Script: {instanceID: 21748}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 135
-      Script: {instanceID: 0}
-    - Class: 136
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/Menu.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
@@ -220,17 +95,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16616}
-    - Class: 114
-      Script: {instanceID: 16618}
-    - Class: 114
-      Script: {instanceID: 16666}
-    - Class: 114
-      Script: {instanceID: 17330}
-    - Class: 114
-      Script: {instanceID: 17808}
-    - Class: 114
-      Script: {instanceID: 18026}
+      Script: {instanceID: 17332}
     - Class: 114
       Script: {instanceID: 19354}
     - Class: 114
@@ -238,234 +103,32 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 19768}
     - Class: 114
-      Script: {instanceID: 20352}
+      Script: {instanceID: 20564}
     - Class: 114
-      Script: {instanceID: 20562}
+      Script: {instanceID: 26432}
     - Class: 114
-      Script: {instanceID: 21378}
+      Script: {instanceID: 26632}
     - Class: 114
-      Script: {instanceID: 21748}
+      Script: {instanceID: 27158}
+    - Class: 114
+      Script: {instanceID: 27174}
+    - Class: 114
+      Script: {instanceID: 31972}
+    - Class: 114
+      Script: {instanceID: 32460}
+    - Class: 114
+      Script: {instanceID: 32840}
+    - Class: 114
+      Script: {instanceID: 32848}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/MyOtherScene.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 54
-      Script: {instanceID: 0}
-    - Class: 64
-      Script: {instanceID: 0}
-    - Class: 65
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 102
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 16616}
-    - Class: 114
-      Script: {instanceID: 16618}
-    - Class: 114
-      Script: {instanceID: 16666}
-    - Class: 114
-      Script: {instanceID: 17808}
-    - Class: 114
-      Script: {instanceID: 18026}
-    - Class: 114
-      Script: {instanceID: 18132}
-    - Class: 114
-      Script: {instanceID: 18450}
-    - Class: 114
-      Script: {instanceID: 18650}
-    - Class: 114
-      Script: {instanceID: 19736}
-    - Class: 114
-      Script: {instanceID: 19870}
-    - Class: 114
-      Script: {instanceID: 19976}
-    - Class: 114
-      Script: {instanceID: 20286}
-    - Class: 114
-      Script: {instanceID: 20494}
-    - Class: 114
-      Script: {instanceID: 20562}
-    - Class: 114
-      Script: {instanceID: 21378}
-    - Class: 114
-      Script: {instanceID: 21420}
-    - Class: 114
-      Script: {instanceID: 21748}
-    - Class: 114
-      Script: {instanceID: 21828}
-    - Class: 114
-      Script: {instanceID: 23474}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/SampleScene.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 54
-      Script: {instanceID: 0}
-    - Class: 64
-      Script: {instanceID: 0}
-    - Class: 65
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 84
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 102
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 16616}
-    - Class: 114
-      Script: {instanceID: 16618}
-    - Class: 114
-      Script: {instanceID: 16666}
-    - Class: 114
-      Script: {instanceID: 17808}
-    - Class: 114
-      Script: {instanceID: 18026}
-    - Class: 114
-      Script: {instanceID: 18132}
-    - Class: 114
-      Script: {instanceID: 18450}
-    - Class: 114
-      Script: {instanceID: 18522}
-    - Class: 114
-      Script: {instanceID: 18650}
-    - Class: 114
-      Script: {instanceID: 19736}
-    - Class: 114
-      Script: {instanceID: 19870}
-    - Class: 114
-      Script: {instanceID: 19976}
-    - Class: 114
-      Script: {instanceID: 20076}
-    - Class: 114
-      Script: {instanceID: 20286}
-    - Class: 114
-      Script: {instanceID: 20494}
-    - Class: 114
-      Script: {instanceID: 20562}
-    - Class: 114
-      Script: {instanceID: 21378}
-    - Class: 114
-      Script: {instanceID: 21420}
-    - Class: 114
-      Script: {instanceID: 21748}
-    - Class: 114
-      Script: {instanceID: 21828}
-    - Class: 114
-      Script: {instanceID: 22828}
-    - Class: 114
-      Script: {instanceID: 23474}
-    - Class: 114
-      Script: {instanceID: 24752}
-    - Class: 114
-      Script: {instanceID: 28316}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 135
-      Script: {instanceID: 0}
-    - Class: 136
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -1610,6 +1273,12 @@ ScriptsOnlyBuild:
     className: WarpTextExample
   - hash:
       serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameOver
+  - hash:
+      serializedVersion: 2
       Hash: 1b4a83f2a2f1a4def12cdc9223cce72c
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -1974,6 +1643,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
     className: TMP_FrameRateCounter
+  - hash:
+      serializedVersion: 2
+      Hash: fcc0e968529af65746611ed974156132
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameLogic
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -2433,19 +2108,82 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: GameOver
+    assemblyName: Unity.Netcode.Components
+    namespaceName: Unity.Netcode.Components
+    className: NetworkRigidbody2D
   - hash:
       serializedVersion: 2
-      Hash: fcc0e968529af65746611ed974156132
+      Hash: 32ddb04ef27e7596a3f3e2b7785b7136
+    assemblyName: Unity.Netcode.Runtime
+    namespaceName: Unity.Netcode
+    className: NetworkObject
+  - hash:
+      serializedVersion: 2
+      Hash: c0412e43908db043c68a7eafc58921c8
+    assemblyName: Unity.Netcode.Runtime
+    namespaceName: Unity.Netcode
+    className: NetworkPrefabsList
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Unity.Netcode.Components
+    namespaceName: Unity.Netcode.Components
+    className: NetworkRigidbody
+  - hash:
+      serializedVersion: 2
+      Hash: 504ce94d407db6cc04deba6c49062bc8
+    assemblyName: Unity.Netcode.Components
+    namespaceName: Unity.Netcode.Components
+    className: NetworkAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 6a8f33c6f65e56dee5afb5653d6b5183
+    assemblyName: Unity.Netcode.Runtime
+    namespaceName: Unity.Netcode
+    className: NetworkManager
+  - hash:
+      serializedVersion: 2
+      Hash: 230eb2f23428157995b50edba2ac29d6
+    assemblyName: Unity.Netcode.Runtime
+    namespaceName: Unity.Netcode.Transports.UTP
+    className: UnityTransport
+  - hash:
+      serializedVersion: 2
+      Hash: b85e9f3614bbf39f88cb399846d28da6
+    assemblyName: Unity.Netcode.Components
+    namespaceName: Unity.Netcode.Components
+    className: NetworkTransform
+  - hash:
+      serializedVersion: 2
+      Hash: 425d3ffa19cad8dda8a95b50af0641a1
+    assemblyName: Unity.Netcode.Runtime
+    namespaceName: Unity.Netcode.Transports.UTP
+    className: SecretsLoaderHelper
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: GameLogic
+    className: RpcTest
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: NetworkCommandLine
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: HelloWorld
+    className: HelloWorldManager
+  - hash:
+      serializedVersion: 2
+      Hash: de444e1dc72cc9df6f2da86991da6775
+    assemblyName: Assembly-CSharp
+    namespaceName: HelloWorld
+    className: HelloWorldPlayer
   platform: 2
   scenePathNames:
-  - Assets/Scenes/Menu.unity
-  - Assets/Scenes/GameList.unity
-  - Assets/Scenes/MyOtherScene.unity
-  - Assets/Scenes/SampleScene.unity
-  playerPath: /Users/julian/Dev/Unity projects/Audio/mirror1.app
+  - Assets/Scenes/NetCodeTutorial.unity
+  playerPath: /Users/julian/Dev/evi-audio-multiplayer/Audio/Build/HelloWorld..app

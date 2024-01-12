@@ -24,7 +24,7 @@
     {
       "Annotation": "BuildPlayerDataGenerator Library/BuildPlayerData/Editor/TypeDb-All.json",
       "DisplayName": "BuildPlayerDataGenerator TypeDb-All",
-      "Action": "\"/Applications/Unity/Hub/Editor/2022.3.3f1/Unity.app/Contents/Tools/netcorerun/netcorerun\" \"/Applications/Unity/Hub/Editor/2022.3.3f1/Unity.app/Contents/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Assembly-CSharp.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/kcp2k.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Mirror.Authenticators.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Mirror.Components.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Mirror.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Mirror.Examples.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Mirror.Transports.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/SimpleWebTransport.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Telepathy.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.TextMeshPro.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.Timeline.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.VisualScripting.State.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/UnityEngine.TestRunner.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/UnityEngine.UI.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"/Applications/Unity/Hub/Editor/2022.3.3f1/Unity.app/Contents/Managed/UnityEngine\" -s=\"/Applications/Unity/Hub/Editor/2022.3.3f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx\" -s=\"/Applications/Unity/Hub/Editor/2022.3.3f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard\" -s=\"/Applications/Unity/Hub/Editor/2022.3.3f1/Unity.app/Contents/NetStandard/Extensions/2.0.0\" -s=\"/Applications/Unity/Hub/Editor/2022.3.3f1/Unity.app/Contents/NetStandard/ref/2.1.0\" -s=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Assets/Mirror/Plugins/Mono.Cecil\" -s=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies\" -s=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom\" -s=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime\" -s=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator\" -s=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
+      "Action": "\"/Applications/Unity/Hub/Editor/2022.3.3f1/Unity.app/Contents/Tools/netcorerun/netcorerun\" \"/Applications/Unity/Hub/Editor/2022.3.3f1/Unity.app/Contents/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Assembly-CSharp.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/kcp2k.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Mirror.Authenticators.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Mirror.Components.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Mirror.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Mirror.Examples.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Mirror.Transports.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/SimpleWebTransport.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Telepathy.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.Burst.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.Collections.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.Mathematics.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.Netcode.Components.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.Netcode.Runtime.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.Networking.Transport.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.TextMeshPro.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.Timeline.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/Unity.VisualScripting.State.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/UnityEngine.TestRunner.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies/UnityEngine.UI.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.burst@1.8.7/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.burst@1.8.7/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.burst@1.8.7/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.burst@1.8.7/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.burst@1.8.7/Unity.Burst.Unsafe.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4/Mono.Cecil.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4/Mono.Cecil.Mdb.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4/Mono.Cecil.Pdb.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4/Mono.Cecil.Rocks.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll\" -a=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"/Applications/Unity/Hub/Editor/2022.3.3f1/Unity.app/Contents/Managed/UnityEngine\" -s=\"/Applications/Unity/Hub/Editor/2022.3.3f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx\" -s=\"/Applications/Unity/Hub/Editor/2022.3.3f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard\" -s=\"/Applications/Unity/Hub/Editor/2022.3.3f1/Unity.app/Contents/NetStandard/Extensions/2.0.0\" -s=\"/Applications/Unity/Hub/Editor/2022.3.3f1/Unity.app/Contents/NetStandard/ref/2.1.0\" -s=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Assets/Mirror/Plugins/Mono.Cecil\" -s=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/ScriptAssemblies\" -s=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.burst@1.8.7\" -s=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.burst@1.8.7/Unity.Burst.CodeGen\" -s=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport\" -s=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom\" -s=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4\" -s=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime\" -s=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator\" -s=\"/Users/julian/Dev/evi-audio-multiplayer/Audio/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
       "Inputs": [
         "/Applications/Unity/Hub/Editor/2022.3.3f1/Unity.app/Contents/Tools/netcorerun/netcorerun",
         "/Applications/Unity/Hub/Editor/2022.3.3f1/Unity.app/Contents/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
@@ -41,6 +41,12 @@
         "Library/ScriptAssemblies/Mirror.Transports.dll",
         "Library/ScriptAssemblies/SimpleWebTransport.dll",
         "Library/ScriptAssemblies/Telepathy.dll",
+        "Library/ScriptAssemblies/Unity.Burst.dll",
+        "Library/ScriptAssemblies/Unity.Collections.dll",
+        "Library/ScriptAssemblies/Unity.Mathematics.dll",
+        "Library/ScriptAssemblies/Unity.Netcode.Components.dll",
+        "Library/ScriptAssemblies/Unity.Netcode.Runtime.dll",
+        "Library/ScriptAssemblies/Unity.Networking.Transport.dll",
         "Library/ScriptAssemblies/Unity.TextMeshPro.dll",
         "Library/ScriptAssemblies/Unity.Timeline.dll",
         "Library/ScriptAssemblies/Unity.VisualScripting.Core.dll",
@@ -48,7 +54,17 @@
         "Library/ScriptAssemblies/Unity.VisualScripting.State.dll",
         "Library/ScriptAssemblies/UnityEngine.TestRunner.dll",
         "Library/ScriptAssemblies/UnityEngine.UI.dll",
+        "Library/PackageCache/com.unity.burst@1.8.7/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll",
+        "Library/PackageCache/com.unity.burst@1.8.7/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll",
+        "Library/PackageCache/com.unity.burst@1.8.7/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll",
+        "Library/PackageCache/com.unity.burst@1.8.7/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll",
+        "Library/PackageCache/com.unity.burst@1.8.7/Unity.Burst.Unsafe.dll",
+        "Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll",
         "Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll",
+        "Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4/Mono.Cecil.dll",
+        "Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4/Mono.Cecil.Mdb.dll",
+        "Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4/Mono.Cecil.Pdb.dll",
+        "Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4/Mono.Cecil.Rocks.dll",
         "Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll",
         "Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll",
         "Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
@@ -203,7 +219,37 @@
       "File": "Library/Bee/200b0aESkipCompile-inputdata.json"
     },
     {
+      "File": "Library/PackageCache/com.unity.burst@1.8.7/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll"
+    },
+    {
+      "File": "Library/PackageCache/com.unity.burst@1.8.7/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll"
+    },
+    {
+      "File": "Library/PackageCache/com.unity.burst@1.8.7/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll"
+    },
+    {
+      "File": "Library/PackageCache/com.unity.burst@1.8.7/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll"
+    },
+    {
+      "File": "Library/PackageCache/com.unity.burst@1.8.7/Unity.Burst.Unsafe.dll"
+    },
+    {
+      "File": "Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll"
+    },
+    {
       "File": "Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+    },
+    {
+      "File": "Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4/Mono.Cecil.dll"
+    },
+    {
+      "File": "Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4/Mono.Cecil.Mdb.dll"
+    },
+    {
+      "File": "Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4/Mono.Cecil.Pdb.dll"
+    },
+    {
+      "File": "Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4/Mono.Cecil.Rocks.dll"
     },
     {
       "File": "Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll"
@@ -240,6 +286,24 @@
     },
     {
       "File": "Library/ScriptAssemblies/Telepathy.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.Burst.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.Collections.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.Mathematics.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.Netcode.Components.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.Netcode.Runtime.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.Networking.Transport.dll"
     },
     {
       "File": "Library/ScriptAssemblies/Unity.TextMeshPro.dll"
