@@ -6,6 +6,8 @@ namespace QuickStart
 {
     public class PlayerScript : NetworkBehaviour
     {
+        public GameLogic gameLogic;
+        
         [FormerlySerializedAs("playerPointsText")]
         public TextMesh playerPointsTextMesh;
 
@@ -36,6 +38,8 @@ namespace QuickStart
         [SyncVar(hook = nameof(OnWeaponChanged))]
         public int activeWeaponSynced = 1;
 
+        // public GameOver gameOver;
+
         void OnWeaponChanged(int _Old, int _New)
         {
             // disable old weapon
@@ -62,6 +66,24 @@ namespace QuickStart
 
         void Awake()
         {
+            GameObject gameLogicObject = GameObject.FindGameObjectWithTag("GameLogic");
+            if (gameLogicObject != null)
+            {
+                GameLogic gameLogicScript = gameLogicObject.GetComponent<GameLogic>();
+                if (gameLogicScript != null)
+                {
+                    gameLogic = gameLogicScript;
+                }
+                else
+                {
+                    Debug.Log("gameLogicScript not found");
+                }
+            }
+            else
+            {
+                Debug.Log("gameLogicObject not found");
+            }
+            
             //allow all players to run this
             sceneScript = GameObject.Find("SceneReference").GetComponent<SceneReference>().sceneScript;
 
@@ -194,13 +216,20 @@ namespace QuickStart
         }
 
         [Command]
-        public void ScorePoint()
+        void ScorePoint()
         {
             playerPoints += 1;
-            if (playerPoints == 3)
+            if (playerPoints >= 3)
             {
                 Debug.Log("win");
+                EndGame();
             }
+        }
+
+        [ClientRpc]
+        private void EndGame()
+        {
+            gameLogic.EndGame();
         }
     }
 }

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Bullet
   - Sphere
+  - GameOver
+  - GameLogic
   layers:
   - Default
   - TransparentFX

@@ -36,7 +36,7 @@ public class SphereMovement : NetworkBehaviour
     void RandomizeStartPosition()
     {
         // Randomly choose the start position and movement direction
-        transform.position = new Vector3(Random.Range(-10f, 10f), 0f, 0f);
+        transform.position = new Vector3(Random.Range(-5f, 5f), 0f, 0f);
         moveInX = Random.value > 0.5f;
     }
 
