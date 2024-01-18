@@ -334,7 +334,7 @@
 "Assets/Scripts/Menu.cs"
 "Assets/Scripts/MoveClass.cs"
 "Assets/Scripts/piano.cs"
-"Assets/Scripts/Player Script.cs"
+"Assets/Scripts/PlayerScript.cs"
 "Assets/Scripts/SceneReference.cs"
 "Assets/Scripts/SceneScript.cs"
 "Assets/Scripts/SphereMovement.cs"
