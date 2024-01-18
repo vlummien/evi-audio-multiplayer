@@ -1764,8 +1764,8 @@ GameObject:
   - component: {fileID: 6966209041397316803}
   - component: {fileID: 676389233722515084}
   - component: {fileID: 7018727523190253132}
-  - component: {fileID: 8466135983214632938}
   - component: {fileID: 8466135983214632939}
+  - component: {fileID: 8466135983214632940}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2315,33 +2315,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8466135983214632938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4078392528894771127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f3dba3103e41477b88c02a4c2fd9a1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameLogic: {fileID: 1962264419}
-  playerPointsTextMesh: {fileID: 4111548574940656966}
-  playerNameTextMesh: {fileID: 911268594970812224}
-  floatingInfo: {fileID: 7715260380247824787}
-  playerPoints: 0
-  weaponArray:
-  - {fileID: 7613345509015759258}
-  - {fileID: 7613345509015759258}
-  - {fileID: 7613345509015759258}
-  playerCamera: {fileID: 963194227}
-  walkSpeed: 6
-  runSpeed: 12
-  lookSpeed: 2
-  lookXLimit: 45
-  canMove: 1
 --- !u!143 &8466135983214632939
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2368,6 +2341,33 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8466135983214632940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4078392528894771127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a87e8d3c90beb47418554fa4b2612721, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameLogic: {fileID: 1962264419}
+  playerPointsTextMesh: {fileID: 4111548574940656966}
+  playerNameTextMesh: {fileID: 911268594970812224}
+  floatingInfo: {fileID: 7715260380247824787}
+  playerPoints: 0
+  weaponArray:
+  - {fileID: 7613345509015759258}
+  - {fileID: 7613345509015759258}
+  - {fileID: 7613345509015759258}
+  playerCamera: {fileID: 963194227}
+  walkSpeed: 6
+  runSpeed: 12
+  lookSpeed: 2
+  lookXLimit: 45
+  canMove: 1
 --- !u!4 &8550138039074166238
 Transform:
   m_ObjectHideFlags: 0
